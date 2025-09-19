@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/01.png">
+    <link rel="stylesheet" href="TT-Curso.css">
+    <script src="TT-Curso.js"></script>
+    <title>Cursos - Tec-Talk</title>
+</head>
+<body>
+   <div class="header">
+        <img src="img/01.png" alt="Tec-Talk Logo" width="100">
+        <a href="TT-Home page.html">Página Inicial</a>
+        <a href="TT-Curso.html">Cursos</a>
+        <a href="TT-Comunidade.html">Comunidade</a>
+        <a href="TT-Sobre.html">Sobre</a>
+        <button class="perfil" onclick="ape()">
+            <h4 style="color: white;">Terminar Sessão</h4>
+            <div class="pp">
+                <img src="img/perfil.png" width="100px">
+            </div>
+        </button>
+    </div>
+    
+    <div class="banner">
+        Cursos
+    </div>
+    <div class="content" id="Botão">
+        <button onclick="MV('html')" class="lk">
+            <img src="img/aaa.png" alt="">
+            <span class="tool">HTML</span>
+            <p>Aqui vai aprender a estruturar páginas da web com elementos como títulos, parágrafos e imagens.</p>
+        </button><br>
+            
+        <button onclick="MV('css')" class="lk">
+            <img src="img/sn-removebg-preview.png" alt="">
+            <span class="tool">CSS</span>
+            <p>No CSS podes aprender a personalizar a cor, complementar o site, torna-lo mais interativo e lindo.</p>
+        </button><br>
+
+        <button onclick="MV('js')" class="lk">
+            <img src="img/js-removebg-preview.png" alt="">
+            <span class="tool">JavaScript</span>
+            <p>Aqui vai aprender a fazer a logica do site desde a torna-lo divertido ou a por algoritmos que <br> poderam ser uteis.</p>
+        </button><br>
+        
+        <button onclick="MV('py')" class="lk">
+            <img src="img/py-removebg-preview.png" alt="">
+            <span class="tool">Python</span>
+            <p>Já aqui tens conhecimentos para linguagem simples e versátil, usada em automação, IA e web</p>
+        </button><br>
+        
+        <button onclick="MV('cpp')" class="lk">
+            <img src="img/c++-removebg-preview.png" alt="">
+            <span class="tool">C++</span>
+            <p>C++ é uma linguagem de programação poderosa e eficiente, jogos e aplicações de alto desempenho</p>
+        </button><br>
+        
+        <button onclick="MV('j')" class="lk">
+            <img src="img/java-removebg-preview.png" alt="">
+            <span class="tool">Java</span>
+            <p>Com essas aulas verais que o java é uma linguagem portável e robusta, comum em apps Android e sistemas corporativos.</p>
+        </button><br>
+        
+    </div>
+
+    <div id="html" class="V">
+        <div class="imagem"><img src="img/aaa.png" alt=""></div>
+        <div class="delado">
+            <div class="aula">
+                <ul class="video-list">
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 01 - Criando novo projeto.mp4">Aula 01 - Criando novo projeto</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 02 - Estrutura Básica.mp4">Aula 02 - Estrutura Básica</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 03 - Meta Tags, Cabeçalho e Parágrafo.mp4">Aula 03 - Meta Tags, Cabeçalho e Parágrafo</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 04 -  Formatação de Texto.mp4">Aula 04 -  Formatação de Texto</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 05 - Elementos de Citação.mp4">Aula 05 - Elementos de Citação</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 06 - Comentários.mp4">Aula 06 - Comentários</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 07 - Links.mp4">Aula 07 - Links</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 08 - Tudo Sobre Imagens.mp4">Aula 08 - Tudo Sobre Imagens</a></li>
+                    <li><a href="Videos/html/Curso HTML Completo_ Aula 09 - Tabelas.mp4">Aula 09 - Tabelas</a></li>
+                    <li><a href="Videos/html/Curso HTML Completo_ Aula 10  - Listas.mp4">Aula 10  - Listas</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 11 - iframes.mp4">Aula 11 - iframes</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 12 - Formulários.mp4">Aula 12 - Formulários</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 13 - Áudio.mp4">Aula 13 - Áudio</a></li>
+                    <li><a href="Videos/html/Curso de HTML Completo_ Aula 14 - Vídeos.mp4">Aula 14 - Vídeos</a></li>
+                    <li><a href="Videos/html/Curso HTML Completo_ Aula 15 - Div e HTML Semântico.mp4">Aula 15 - Div e HTML Semântico</a></li>
+                </ul>
+            </div>
+            <div class="des"> 
+                <p>HTML (HyperText Markup Language) é a linguagem base da web. Ele é usado para estruturar páginas, organizando elementos como textos, imagens, links e vídeos. Combinado com CSS para estilos e JavaScript para interatividade, o HTML permite a criação de sites dinâmicos e responsivos.</p>
+                <p>Nesta seção, encontrarás vídeos explicativos sobre HTML, desde os conceitos básicos até técnicas mais avançadas. Aprende a criar páginas web do zero e desenvolve as tuas habilidades na programação para a internet!</p>
+            </div>
+        </div>       
+    </div>
+
+    <div id="css" class="V">
+        <div class="imagem"><img src="img/sn-removebg-preview.png" alt=""></div>
+        <div class="delado">
+            <div class="aula">
+                <ul class="video-list">
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 01 - O que é CSS e CSS Inline.mp4">Aula 01 - O que é CSS e CSS Inline</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 02 - CSS Interno (incorporado na página).mp4">Aula 02 - CSS Interno</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 03 - CSS Externo.mp4">Aula 03 - CSS Externo</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 04 - Seletores e Classes.mp4">Aula 04 - Seletores e Classes</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 05 - Propriedade Color.mp4">Aula 05 - Propriedade Color</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 06 - Propriedade Background.mp4">Aula 06 - Propriedade Background</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 07 - Propriedade Border.mp4">Aula 07 - Propriedade Border</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 08 - Propriedade Margin.mp4">Aula 08 - Propriedade Margin</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 09 - Propriedade Padding e Criando Um Botão Simples.mp4">Aula 09 - Padding e Criando Botão Simples</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 10 - Propriedade Width e Height.mp4">Aula 10 - Propriedade Width e Height</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 11 - Propriedade Text.mp4">Aula 11 - Propriedade Text</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 12 - Propriedade Font.mp4">Aula 12 - Propriedade Font</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 13 - Estilização de Links.mp4">Aula 13 - Estilização de Links</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 14 - Propriedade Display.mp4">Aula 14 - Propriedade Display</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 15 - Propriedade Max-Width.mp4">Aula 15 - Propriedade Max-Width</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 16 - Propriedade Position.mp4">Aula 16 - Propriedade Position</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 17 - Propriedade Overflow.mp4">Aula 17 - Propriedade Overflow</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 18 - Propriedade Float.mp4">Aula 18 - Propriedade Float</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 19 - Propriedade Opacity.mp4">Aula 19 - Propriedade Opacity</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 20 - Efeito Dropdown.mp4">Aula 20 - Efeito Dropdown</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 21 - Especificidade CSS.mp4">Aula 21 - Especificidade CSS</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 22 - Regra Important.mp4">Aula 22 - Regra Important</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 23 - Efeito Gradiente.mp4">Aula 23 - Efeito Gradiente</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 24 - Propriedades Text Shadow e Box Shadow.mp4">Aula 24 - Text Shadow e Box Shadow</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 25 - Efeitos de Texto.mp4">Aula 25 - Efeitos de Texto</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 26 - Media Queries.mp4">Aula 26 - Media Queries</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 27 - Flexbox.mp4">Aula 27 - Flexbox</a></li>
+                    <li><a href="Videos/css/Curso CSS Completo_ Aula 28  - Criando Site do Zero Com CSS e HTML.mp4">Aula 28 - Criando Site do Zero</a></li>
+                </ul>
+            </div>
+            <div class="des"> 
+                <p>CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas web. Com o CSS, podemos controlar cores, fontes, layouts e tornar os sites responsivos para diferentes dispositivos. Ele trabalha em conjunto com o HTML, permitindo criar designs modernos e atraentes.</p>
+                <p>No Tec-Talk, encontrarás vídeos que ensinam desde os conceitos básicos até técnicas avançadas, incluindo animações, flexbox, grid e muito mais. Aprende a transformar páginas simples em projetos incríveis com o poder do CSS!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="js" class="V">
+        <div class="imagem"><img src="img/js-removebg-preview.png" alt="JavaScript"></div>
+        <div class="delado">
+            <div class="aula">
+                <ul class="video-list">
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 01 - JS Interno e Externo.mp4">Aula 01 - JS Interno e Externo</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 02 - Tipos de Saída.mp4">Aula 02 - Tipos de Saída</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 03 - Declarações.mp4">Aula 03 - Declarações</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 04 - Sintaxe.mp4">Aula 04 - Sintaxe</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 05 - Comentários.mp4">Aula 05 - Comentários</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 06 - Var Let Const.mp4">Aula 06 - Var, Let, Const</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 07 - Operadores.mp4">Aula 07 - Operadores</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 08 - Funções.mp4">Aula 08 - Funções</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 09 - Objetos.mp4">Aula 09 - Objetos</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 10 - Eventos.mp4">Aula 10 - Eventos</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 11 - Array (Matrizes).mp4">Aula 11 - Array (Matrizes)</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 12 - Métodos Para Arrays (Matrizes).mp4">Aula 12 - Métodos para Arrays</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 13 - If e Else.mp4">Aula 13 - If e Else</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 14 - Switch.mp4">Aula 14 - Switch</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 15 - Laço de Repetição For.mp4">Aula 15 - Laço de Repetição For</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 16 - SetTimeout e SetInterval.mp4">Aula 16 - SetTimeout e SetInterval</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 17 - Classes.mp4">Aula 17 - Classes</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 18 - Manipulação de Datas.mp4">Aula 18 - Manipulação de Datas</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 19 - JSON.mp4">Aula 19 - JSON</a></li>
+                    <li><a href="Videos/js/Curso Javascript Completo_ Aula 20 - Projeto Lista de Tarefas.mp4">Aula 20 - Projeto Lista de Tarefas</a></li>
+                </ul>
+            </div>
+            <div class="des"> 
+                <p>JavaScript (JS) é uma linguagem de programação essencial para o desenvolvimento web. Ele permite criar interatividade nas páginas, como animações, validações de formulários, efeitos dinâmicos e até aplicações completas.</p>
+                <p>No Tec-Talk, encontrarás vídeos que te ensinam desde os fundamentos do JavaScript até técnicas avançadas, incluindo manipulação do DOM, eventos, APIs, e frameworks populares. Aprende a dar vida aos teus projetos web com JavaScript!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="py" class="V">
+        <div class="imagem"><img src="img/py-removebg-preview.png" alt="Python"></div>
+        <div class="delado">
+            <div class="aula">
+                <ul class="video-list">
+                    <li><a href="Videos/ps/0-Curso Gratuito de Programação em Python [Curso de Python_ Aula 0].mp4">Aula 00 - Curso Gratuito de Programação em Python</a></li>
+                    <li><a href="Videos/ps/1-Introdução à Programação [Curso de Python_ Aula 1].mp4">Aula 01 - Introdução à Programação</a></li>
+                    <li><a href="Videos/ps/2-Introdução ao Python, IDLE e VS Code [Curso de Python_ Aula 2].mp4">Aula 02 - Introdução ao Python, IDLE e VS Code</a></li>
+                    <li><a href="Videos/ps/3-Aprendendo a Debug (depuração de código)-Curso de Python_ Aula 3.mp4">Aula 03 - Aprendendo Debug (depuração de código)</a></li>
+                    <li><a href="Videos/ps/4-Saída de dados com print() e f-strings [Curso de Python_ Aula 4].mp4">Aula 04 - Saída de dados com print() e f-strings</a></li>
+                    <li><a href="Videos/ps/5-Entrada de dados com input() [Curso de Python_ Aula 5].mp4">Aula 05 - Entrada de dados com input()</a></li>
+                    <li><a href="Videos/ps/6-Variáveis, tipos de dados e atribuição [Curso de Python_ Aula 6].mp4">Aula 06 - Variáveis, tipos de dados e atribuição</a></li>
+                    <li><a href="Videos/ps/7-Operadores e expressões aritméticas [Curso de Python_ Aula 7].mp4">Aula 07 - Operadores e expressões aritméticas</a></li>
+                    <li><a href="Videos/ps/8-Palavras reservadas (keywords) [Curso de Python_ Aula 8].mp4">Aula 08 - Palavras reservadas (keywords)</a></li>
+                
+                </ul>
+            </div>
+            <div class="des"> 
+                <p>Python é uma linguagem de programação poderosa e versátil, usada em desenvolvimento web, automação, análise de dados, inteligência artificial e muito mais. Com uma sintaxe simples e intuitiva, é ideal tanto para iniciantes quanto para programadores experientes.</p>
+                <p>No Tec-Talk, encontrarás vídeos que te guiam desde os conceitos básicos até técnicas avançadas, abordando estruturas de controle, manipulação de dados, bibliotecas populares e desenvolvimento de projetos. Aprende a programar de forma eficiente com Python!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="cpp" class="V">
+        <div class="imagem"><img src="img/c++-removebg-preview.png" alt="C++"></div>
+        <div class="delado">
+            <div class="aula">
+                <ul class="video-list">
+                    <li><a href="Videos/c++/INTRODUÇÃO - LINGUAGEM C_C++ AULA DE PROGRAMAÇÃO 001 - EX INFZ.mp4">Aula 01 - Introdução à Linguagem C/C++</a></li>
+                    <li><a href="Videos/c++/STUDIO.H E PRINT - LINGUAGEM C_C++ AULA DE PROGRAMAÇÃO 002 - EX INFZ.mp4">Aula 02 - Studio.h e Print</a></li>
+                    <li><a href="Videos/c++/INT E SOMA - LINGUAGEM C_C++ AULA DE PROGRAMAÇÃO 003 -  EXINFZ.mp4">Aula 03 - Int e Soma</a></li>
+                    <li><a href="Videos/c++/DECIMAIS  - LINGUAGEM C_C++ AULA DE PROGRAMAÇÃO 004 - EX INFZ.mp4">Aula 04 - Decimais</a></li>
+                    <li><a href="Videos/c++/INT, FLOAT E CHAR - LINGUAGEM C_C++ AULA DE PROGRAMAÇÃO 005 - EX INFZ.mp4">Aula 05 - Int, Float e Char</a></li>
+                    <li><a href="Videos/c++/OPERAÇÕES MATEMÁTICAS - LINGUAGEM C_C++ AULA DE PROGRAMAÇÃO 006 -  EX INFZ.mp4">Aula 06 - Operações Matemáticas</a></li>
+                    <li><a href="Videos/c++/COMO FAZER COMENTARIOS - LINGUAGEM C_C++ AULA DE PROGRAMAÇÃO 007  - EX INFZ.mp4">Aula 07 - Como Fazer Comentários</a></li>
+                    <li><a href="Videos/c++/c++7.mp4">Aula 08 - C++ 7</a></li>
+                    <li><a href="Videos/c++/c++8.mp4">Aula 09 - C++ 8</a></li>
+                    <li><a href="Videos/c++/c++11.mp4">Aula 10 - C++ 11</a></li>
+                    <li><a href="Videos/c++/c++12.mp4">Aula 11 - C++ 12</a></li>
+                    <li><a href="Videos/c++/c++13.mp4">Aula 12 - C++ 13</a></li>
+                </ul>
+            </div>
+            <div class="des"> 
+                <p>C++ é uma linguagem de programação poderosa e de alto desempenho, amplamente usada no desenvolvimento de softwares, jogos, sistemas operacionais e aplicações que exigem velocidade e eficiência. Combinando programação procedural e orientada a objetos, C++ oferece grande controle sobre hardware e memória.</p>
+                <p>No Tec-Talk, encontrarás vídeos desde os fundamentos da linguagem até conceitos avançados, incluindo estruturas de dados, ponteiros, programação orientada a objetos e otimização de código. Aprende a desenvolver aplicações robustas e eficientes com C++!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="j" class="V">
+        <div class="imagem"><img src="img/java-removebg-preview.png" alt="Java"></div>
+        <div class="delado">
+            <div class="aula">
+                <ul class="video-list">
+                    <li><a href="Videos/java/01.mp4">Aula 01 - Introdução ao Java</a></li>
+                    <li><a href="Videos/java/02.mp4">Aula 02 - Configuração do Ambiente</a></li>
+                    <li><a href="Videos/java/03.mp4">Aula 03 - Primeiro Programa em Java</a></li>
+                    <li><a href="Videos/java/04.mp4">Aula 04 - Variáveis e Tipos de Dados</a></li>
+                    <li><a href="Videos/java/05.mp4">Aula 05 - Operadores Matemáticos</a></li>
+                    <li><a href="Videos/java/06.mp4">Aula 06 - Entrada de Dados</a></li>
+                    <li><a href="Videos/java/07.mp4">Aula 07 - Estruturas Condicionais</a></li>
+                    <li><a href="Videos/java/08.mp4">Aula 08 - Estruturas de Repetição</a></li>
+                    <li><a href="Videos/java/09.mp4">Aula 09 - Arrays em Java</a></li>
+                    <li><a href="Videos/java/10.mp4">Aula 10 - Métodos e Funções</a></li>
+                    <li><a href="Videos/java/11.mp4">Aula 11 - Classes e Objetos</a></li>
+                    <li><a href="Videos/java/12.mp4">Aula 12 - Construtores e Encapsulamento</a></li>
+                    <li><a href="Videos/java/13.mp4">Aula 13 - Herança e Polimorfismo</a></li>
+                    <li><a href="Videos/java/14.mp4">Aula 14 - Interfaces e Abstração</a></li>
+                    <li><a href="Videos/java/15.mp4">Aula 15 - Manipulação de Strings</a></li>
+                    <li><a href="Videos/java/16.mp4">Aula 16 - Tratamento de Exceções</a></li>
+                    <li><a href="Videos/java/17.mp4">Aula 17 - Coleções e Listas</a></li>
+                    <li><a href="Videos/java/18.mp4">Aula 18 - Mapas e Dicionários</a></li>
+                    <li><a href="Videos/java/19.mp4">Aula 19 - Manipulação de Arquivos</a></li>
+                    <li><a href="Videos/java/20.mp4">Aula 20 - Introdução ao Banco de Dados</a></li>
+                    <li><a href="Videos/java/21.mp4">Aula 21 - Conexão com MySQL</a></li>
+                    <li><a href="Videos/java/22.mp4">Aula 22 - Operações CRUD no Banco</a></li>
+                    <li><a href="Videos/java/23.mp4">Aula 23 - Programação Orientada a Eventos</a></li>
+                    <li><a href="Videos/java/24.mp4">Aula 24 - Introdução ao JavaFX</a></li>
+                    <li><a href="Videos/java/25.mp4">Aula 25 - Criando Interfaces Gráficas</a></li>
+                    <li><a href="Videos/java/26.mp4">Aula 26 - Manipulação de Layouts</a></li>
+                    <li><a href="Videos/java/27.mp4">Aula 27 - Eventos e Listeners</a></li>
+                    <li><a href="Videos/java/28.mp4">Aula 28 - Conectando JavaFX ao Banco de Dados</a></li>
+                    <li><a href="Videos/java/29.mp4">Aula 29 - Threads e Concorrência</a></li>
+                    <li><a href="Videos/java/30.mp4">Aula 30 - Programação Funcional em Java</a></li>
+                    <li><a href="Videos/java/31.mp4">Aula 31 - Streams e Lambda</a></li>
+                    <li><a href="Videos/java/32.mp4">Aula 32 - Expressões Regulares</a></li>
+                    <li><a href="Videos/java/33.mp4">Aula 33 - Introdução a Spring Boot</a></li>
+                    <li><a href="Videos/java/34.mp4">Aula 34 - Criando APIs REST</a></li>
+                    <li><a href="Videos/java/35.mp4">Aula 35 - Segurança com JWT</a></li>
+                    <li><a href="Videos/java/36.mp4">Aula 36 - Integração com Front-end</a></li>
+                    <li><a href="Videos/java/37.mp4">Aula 37 - Testes Unitários em Java</a></li>
+                    <li><a href="Videos/java/38.mp4">Aula 38 - Introdução a Microservices</a></li>
+                    <li><a href="Videos/java/39.mp4">Aula 39 - Mensageria com Kafka</a></li>
+                    <li><a href="Videos/java/40.mp4">Aula 40 - Deploy de Aplicações Java</a></li>
+                    <li><a href="Videos/java/41.mp4">Aula 41 - Integração com APIs Externas</a></li>
+                    <li><a href="Videos/java/42.mp4">Aula 42 - Criando Chatbots com Java</a></li>
+                    <li><a href="Videos/java/43.mp4">Aula 43 - Otimização de Performance</a></li>
+                    <li><a href="Videos/java/44.mp4">Aula 44 - Trabalhando com WebSockets</a></li>
+                    <li><a href="Videos/java/45.mp4">Aula 45 - Construindo um E-commerce</a></li>
+                    <li><a href="Videos/java/46.mp4">Aula 46 - Introdução ao Big Data com Java</a></li>
+                    <li><a href="Videos/java/47.mp4">Aula 47 - Integração com IA</a></li>
+                    <li><a href="Videos/java/48.mp4">Aula 48 - Criando um Sistema Completo</a></li>
+                    <li><a href="Videos/java/49.mp4">Aula 49 - Preparação para o Mercado</a></li>
+                    <li><a href="Videos/java/50.mp4">Aula 50 - Conclusão do Curso</a></li>
+                </ul>
+            </div>
+            <div class="des"> 
+                <p style=" margin: 30px;">Java é uma linguagem de programação orientada a objetos e uma plataforma de desenvolvimento amplamente utilizada. Criada pela Sun Microsystems em 1995 e atualmente mantida pela Oracle, Java é conhecida por sua portabilidade, segurança e robustez.</p>
+                <h2>Principais Características do Java</h2>
+                <p style=" margin: 30px;">Portabilidade: "Escreva uma vez, execute em qualquer lugar" (WORA – Write Once, Run Anywhere), pois os programas Java rodam na JVM (Java Virtual Machine), tornando-os independentes do sistema operacional.</p>
+                <p style="  margin: 30px;">Orientação a Objetos: Segue o paradigma da Programação Orientada a Objetos (POO), permitindo reutilização de código e modularidade.</p>
+                <p style="  margin: 30px;">Segurança: Tem um forte mecanismo de gerenciamento de memória e proteção contra execução de código malicioso.</p>
+
+            </div>
+        </div>
+    </div>    
+</body>
+</html> 

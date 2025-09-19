@@ -1,0 +1,267 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header {
+       background-color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    padding: 05px;
+}
+
+.header a {
+    margin: 45px;
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header a:hover{
+    color: rgb(214, 214, 214);
+}
+
+.header img {
+    display: flex;
+    justify-content: left;
+    width: 110px;
+    align-items:center ;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(27, 103, 179);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1.2vh 2.4vh;
+    width: 30vh;
+    border-radius: 2.2vh;
+    cursor: pointer;
+    margin: 2.4vh;
+    border: none;
+}
+
+
+.pp{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px dodgerblue, 0 0 40px lightskyblue;
+    animation: glow-border 1.5s infinite alternate;
+}
+
+
+.button{
+    background-color: dodgerblue;
+    color: white;
+    padding: 1vh 1.6;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1vh;
+    transition: 0.3s ease;
+}
+
+.button:hover{
+    background-color: grey;
+}
+
+
+.banner{
+    background-color: rgb(27, 103, 179);
+    color: white;
+    padding: 4vh;
+    text-align: left;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+
+.V{
+    display: none;
+    flex-wrap: wrap;
+    gap: 3vh;
+    justify-content: center;
+          
+}
+
+
+
+.content{
+    display: flex;
+    gap: 3vh;
+    margin: 3vh ;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lk {
+    background-color: rgb(27, 103, 179);
+    color: white;
+    padding: 2vh 50vh; 
+    border-radius: 2.4vh;
+    justify-content: space-between;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    gap: 1.8vh; 
+    width: 90vw;
+}
+
+.lk img {
+    width: 11vw;
+    height: 13vh;
+    margin: 1.3vh;
+    margin-left: -12vh;
+    transition: transform 0.3s ease;
+}
+
+.lk:hover img {
+    transform: scale(1.1);
+    background-color: gray;
+    border-radius: 3vh;
+}
+
+.tool {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+  padding: 0.7vh 1.2vh;  
+    border-radius: 5.6vh;
+    font-size: 3vh;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+   
+}
+
+.lk:hover .tool {
+    opacity: 1;
+}
+
+.imagem{
+    display: flex;
+    background-color: rgb(27, 103, 179);
+    width: 60vh;
+    border-radius: 3.4vh;
+    margin-top: 3.4vh;
+    margin-left: 3.4vh;
+    align-items: center;
+   
+    
+}
+
+.image{
+    display: flex;
+    background-color: rgb(27, 103, 179);
+    width: 45vh;
+    border-radius: 4vh;
+    margin-top: 3.5vh;
+    margin-left: 3.5vh;
+    align-items: center;
+}
+
+.aula{
+    width: 30vw;
+    background-color: rgb(27, 103, 179);
+    padding: 2.4vh;
+    border-radius: 2.4vh;
+    margin-top: 3.5vh;
+    margin-left: 3.4vh;
+    height: 65vh;
+    overflow-y: auto;
+}
+
+.aula::-webkit-scrollbar {
+    width: 1vh;
+}
+
+.aula::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+    border-radius: 1.1vh;
+}
+
+.aula::-webkit-scrollbar-track {
+    
+    border-radius: 2.4vh;
+}
+
+.video-list{
+    list-style: none;
+    padding: 0;
+}
+
+.video-list li{
+    background: rgb(1, 1, 26);
+    padding: 1.2vh;
+    margin-bottom: 1.2vh;
+    border-radius: 1.2vh;
+
+}
+
+.video-list li:hover{
+    background-color: grey;
+}
+
+.video-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.video-list li a:hover{
+    color: dodgerblue;
+}
+
+.delado{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vh;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.des{
+    background-color: rgb(27, 103, 179);
+    border-radius: 1.2vh;
+    width: 75vw;
+    margin-top: 3.3vh;
+    height: 70vh;
+   flex:1;
+}
+
+.des p{
+    margin: 6vh;
+    text-align: left;
+}
+
+.des h2{
+    margin: 5.5vh;
+    text-align: left;
+}
+
+.V{
+    display: none;
+    flex-wrap: wrap;
+    gap: 2.3vh;
+    justify-content: start;
+    align-items: flex-start
+}
+
+.V.active{
+    display: block;
+    
+}

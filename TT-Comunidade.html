@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/01.png">
+    <title>Comunidade - Tec-Talk</title>
+    <link rel="stylesheet" href="TT-Comunidade.css">
+    <body>
+</head>
+<body>
+    <div class="header">
+        <img src="img/01.png" alt="Tec-Talk Logo" width="100">
+        <a href="TT-Home page.html">Página Inicial</a>
+        <a href="TT-Curso.html">Cursos</a>
+        <a href="TT-Comunidade.html">Comunidade</a>
+        <a href="TT-Sobre.html">Sobre</a>
+        <button class="perfil" onclick="ape()">
+            <h4 style="color: white;">Terminar Sessão</h4>
+            <div class="pp">
+                <img src="img/perfil.png" width="100px">
+            </div>
+        </button>
+    </div>
+    
+    <div class="banner"><h2>Comunidade</h2></div>
+    <div class="container">
+        <div class="sidebar">
+            <button class="chat-button" data-chat="Html">Html</button>
+            <button class="chat-button" data-chat="Css">Css</button>
+            <button class="chat-button" data-chat="Java">Java</button>
+            <button class="chat-button" data-chat="JavaScript">JavaScript</button>
+            <button class="chat-button" data-chat="Python">Python</button>
+            <button class="chat-button" data-chat="C++">C++</button>
+        </div>
+        <div class="chat-container">
+            <h2 id="chat-title">Chat: Escolhe um chat</h2>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite uma mensagem...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentChat = '';
+        let chatHistories = {};
+
+        document.querySelectorAll('.chat-button').forEach(button => {
+            button.addEventListener('click', () => {
+                currentChat = button.getAttribute('data-chat');
+                document.getElementById('chat-title').textContent = `Chat: ${currentChat}`;
+                document.getElementById('chat-messages').innerHTML = chatHistories[currentChat] || '';
+            });
+        });
+
+        function sendMessage() {
+            const input = document.getElementById('message-input');
+            const message = input.value.trim();
+            if (message && currentChat) {
+                const chatBox = document.getElementById('chat-messages');
+                const newMessage = document.createElement('p');
+                newMessage.innerHTML = `<strong>Você:</strong> ${message}`;
+                chatBox.appendChild(newMessage);
+                chatHistories[currentChat] = chatBox.innerHTML;
+                input.value = '';
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+
+        document.getElementById('send-button').addEventListener('click', sendMessage);
+        document.getElementById('message-input').addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        const is_logged = JSON.parse(localStorage.getItem('is_logged'))
+
+        if (is_logged !== true) {
+        window.location.href = "TT-Sign in.html"
+        }
+
+        function ape(){
+        console.log("apertou")
+
+        localStorage.setItem('is_logged', JSON.stringify(false))
+        window.location.href = "TT-Sign in.html"
+        }
+    </script>
+</body>
+</html>

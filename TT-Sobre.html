@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/01.png">
+    <link rel="stylesheet" href="TT-Sobre.css">
+    <title>Home Page - Tec-Talk</title>
+</head>
+<body>
+    <div class="header">
+        <img src="img/01.png" alt="Tec-Talk Logo" width="100">
+        <a href="TT-Home page.html">Página Inicial</a>
+        <a href="TT-Curso.html">Cursos</a>
+        <a href="TT-Comunidade.html">Comunidade</a>
+        <a href="TT-Sobre.html">Sobre</a>
+        <button class="perfil" onclick="ape()">
+            <h4 style="color: white;">Terminar Sessão</h4>
+            <div class="pp">
+                <img src="img/perfil.png" width="100px">
+            </div>
+        </button>
+    </div>
+    <div class="banner">
+        Sobre
+    </div>
+    <div class="content">
+        <div class="EG">
+            <p>O Tec-Talk é um portal dedicado ao ensino e aprendizado de tecnologia, criado para ajudar estudantes, iniciantes e entusiastas da programação a dominarem linguagens como HTML, CSS, JavaScript, Python e C++. Nosso objetivo é tornar o aprendizado de desenvolvimento web e software mais acessível, organizado e interativo.</p>
+            <p>Aqui no Tec-Talk, disponibilizamos vídeos organizados por categorias, facilitando a navegação e tornando o estudo mais dinâmico. Queremos que cada visitante encontre exatamente o que precisa para evoluir em sua jornada na tecnologia.</p>
+            <p>Seja bem-vindo ao Tec-Talk, onde o conhecimento, criatividade e imaginação pode se transforma em habilidades reais!</p>
+        </div>
+    </div>
+    <script>
+         function ape(){
+        console.log("apertou")
+
+        localStorage.setItem('is_logged', JSON.stringify(false))
+        window.location.href = "TT-Sign in.html"
+    }
+
+
+    </script>
+</body>
+</html>

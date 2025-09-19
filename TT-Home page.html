@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/01.png">
+    <link rel="stylesheet" href="TT-Home page.css">
+    <script src="TT-Home page.js" defer></script>
+    <title>Home Page - Tec-Talk</title>
+
+</head>
+<body>
+    <div class="header">
+        <img src="img/01.png" alt="Tec-Talk Logo" width="100">
+        <a href="TT-Home page.html">Página Inicial</a>
+        <a href="TT-Curso.html">Cursos</a>
+        <a href="TT-Comunidade.html">Comunidade</a>
+        <a href="TT-Sobre.html">Sobre</a>
+        <button class="perfil" onclick="ape()" >
+            <h4 style="color: white;">Terminar Sessão</h4>
+            <div class="pp">
+                <img src="img/perfil.png" width="100px">
+            </div>
+        </button>
+    </div>
+    
+
+    <div class="nav">
+        Página <span>Inicial</span>
+    </div>
+    <div class="cla">
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-slide">
+                    <a href="TT-Curso.html"><img src="img/aaa.png" alt="Primeiro Slide"></a>
+                    <div class="caption">HTML- Marcação</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/sn-removebg-preview.png" alt="Segundo Slide">
+                    <div class="caption">CSS- Estilização</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/js-removebg-preview.png" alt="Terceiro Slide">
+                    <div class="caption">JavaScript- Executador</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/py-removebg-preview.png" alt="Quarto Slide">
+                    <div class="caption">Python- desenvolvimento de Web</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/c++-removebg-preview.png" alt="Quinto Slide">
+                    <div class="caption">C++ - Sistemas operacionais </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/java-removebg-preview.png" alt="Sexto Slide">
+                    <div class="caption">Java- Sistemas Web</div>
+                </div>
+            </div>
+        
+            <div class="imagem">
+                <img src="img/download.png" alt="">
+                <img src="img/pc.png" alt="">
+                <img src="img/vs code.png" alt="">
+                <img src="img/vs19.png" alt="">
+                <img src="img/xamp.png" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="EG">
+            <h1>Introdução</h1>
+            <p>A programação é a base do mundo digital. Desde aplicações móveis e websites até sistemas operacionais e inteligência artificial, tudo funciona graças a linguagens de programação e a lógica de programação.</p> 
+            <h2> 1. O que são Linguagens de Programação?</h2> 
+            <p>As linguagens de programação são conjuntos de instruções que permitem aos programadores criar softwares e dar comandos ao computador. Elas servem como uma ponte entre os seres humanos e as máquinas.</p>            
+            <p> As linguagens são classificadas em diferentes níveis:</p>  
+            <li>Linguagens de Baixo Nível: Como Assembly e Linguagem de Máquina (binário), mais próximas do hardware e difíceis de entender para humanos. </li>  
+            <li>Linguagens de Alto Nível: Como Python, JavaScript e Java, que possuem uma sintaxe mais próxima da linguagem humana, facilitando o aprendizado.</li>  
+           
+            <h2>Exemplo de código em Python (alto nível): </h2>
+            <div class="var"> 
+                <p style="background-color: gray;" class="py">python</p>
+                <p><span style="color: burlywood;">     print</span>(<span style="color: green;"> "Olá, Mundo!"</span>) </p>
+            </div>
+            <h2> 2. O que é Lógica de Programação?</h2>  
+            <p>A lógica de programação é o raciocínio necessário para resolver problemas usando um algoritmo. Ela envolve a criação de sequências de passos lógicos para atingir um objetivo. </p> 
+            
+            <h2>Principais Conceitos de Lógica de Programação: </h2>
+            <div class="var"> 
+                <p style="background-color: gray;" class="py">Variáveis: Armazenamento de dados. Exemplo: </p> 
+                <p style="color: white;">       nome = <span style="color: green;">"Emanuel"</span> </p>
+                <p style="color: white;">       idade= <span style="color: darkmagenta;"> 17</span> </p> 
+            </div> 
+            
+            <h2>Condicionais: Permitem tomar decisões. Exemplo: </h2>  
+            <div class="var">
+                <p style="background-color: gray;" class="py">python </p>
+                <p><span>        if</span> <span style="color: white;">idade >=</span><span style="color: darkmagenta;"> 18</span>:</p>
+                <p><span style="color: burlywood;">     print</span> (<span style="color: green;">"Maior de idade"</span>)</p>
+                <p><span>   else:</span> </p>
+                <p> <span style="color: burlywood;">    print</span>(<span style="color: green;">"Menor de idade"</span>) </p>
+            </div>    
+            <h2>Laços de Repetição: Executam comandos várias vezes. Exemplo:</h2>  
+            <div class="var">
+                <p style="background-color:gray ;" class="py">python</p>
+                <p><span style> for</span> i <span style>in</span> <span style="color: burlywood;">range</span> (<span style="color: darkmagenta;">5</span>): </p>
+                <p><span style="color: burlywood;"> print</span>(<span style="color: green;">"Repetição"</span>,i)</p> 
+            </div>    
+            <h2>Funções: Criam blocos de código reutilizáveis. Exemplo: </h2>  
+            <div class="var">
+                <p style="background-color:gray ;" class="py">python </p >
+                <p> <span>def</span> <span style="color: brown;">saudacao</span>(nome): </p>
+                <p><span style="color: burlywood;">print</span>(<span style="color: green;"> f"Olá, {nome}</span>!") </p>
+                <p>saudacao(<span style="color: green;">"Emanuel"</span>) </p>
+            </div>
+                <h2>3. Importância da Programação</h2> 
+                <p> Hoje, programar é uma habilidade valiosa em diversas áreas, como desenvolvimento de software, inteligência artificial, ciência de dados e até automação industrial. Aprender lógica de programação ajuda a resolver problemas, pensar de forma estruturada e criar soluções eficientes. </p>            
+                <p>Se quiser começar na prática, pode explorar linguagens como Python, JavaScript, C++ e Java. </p>  
+                <p>Dica: A lógica de programação é mais importante do que a linguagem em si! Se dominares a lógica, aprender novas linguagens será muito mais fácil. </p>   
+            </div>
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>
